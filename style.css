@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #121215;
+    color: #eaeaea;
+}
+
+nav {
+    padding: 6.4rem;
+}
+
+.memory {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-decoration: none;
+    margin-bottom: 6.4rem;
+}
+
+.memory small {
+    color: #bebebf;
+    font-size: 1.2rem;
+}
+
+.memory h1 {
+    font-size: 3.2rem;
+    color: #eaeaea;
+}
+
+.memory img {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.memory p {
+    font-size: 1.8rem;
+    color: #bebebf;
+    line-height: 2.8rem;
+}
