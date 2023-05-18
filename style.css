@@ -15,10 +15,16 @@ body {
     font-size: 1.6rem;
     background-color: #121215;
     color: #eaeaea;
+    display: grid;
+    grid-template-areas: "profile timeline";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
 }
 
 nav {
     padding: 6.4rem;
+    grid-area: timeline;
+    overflow-y: scroll;
 }
 
 .memory {
@@ -51,3 +57,37 @@ nav {
     color: #bebebf;
     line-height: 2.8rem;
 }
+
+aside {
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-right: .1rem solid;
+    border-image: linear-gradient(#727275, #2c2c31) 1;
+    background-image: url("./assets/background.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  
+  aside img:nth-child(2) {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: .4rem solid transparent;
+    background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+      linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
+  }
+  
+  aside p {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  
+  aside span {
+    font-size: 1.2rem;
+    color: #9e9ea0;
+  }
